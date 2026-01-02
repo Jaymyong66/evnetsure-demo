@@ -3,7 +3,9 @@ import { motion } from 'framer-motion'
 import { useAccount } from 'wagmi'
 import { theme } from '@/styles/theme'
 import { WorldMap } from '@/components/WorldMap'
-import { Header } from '@/components/layout'
+import { Header, Footer } from '@/components/layout'
+import { LiveTransactions } from '@/components/dashboard'
+import { HowItWorks, CoveragePlans, FAQ } from '@/components/sections'
 import { Button, GlassCard, StatCard } from '@/components/common'
 
 const PageContainer = styled.div`
@@ -364,7 +366,14 @@ export const Home = () => {
             </FeatureCard>
           </FeaturesGrid>
         </FeaturesSection>
+
+        <LiveTransactions />
+        <HowItWorks />
+        <CoveragePlans />
+        <FAQ />
       </Content>
+
+      <Footer />
     </PageContainer>
   )
 }
