@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/evnetsure-demo/',
   plugins: [
     react({
       jsxImportSource: '@emotion/react',
